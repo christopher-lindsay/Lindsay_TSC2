@@ -80,18 +80,19 @@
         <h3>MESA for Modelling Convection</h3>
         <div class="features" style="text-align:center;">
                 <img src="images/Overshoot_Mixing.png" width="900" style=" margin: 5px 10px 5px 10px;" alt=""/>
-        <div class="features">
-            <p style="margin-bottom:3cm;">
+        <div class="features" style="text-align: left;">
+            <p style="margin-bottom:1cm;">
                 Stellar evolution codes like <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract" target="_blank"> MESA</a> generally use a mixing length approximation to model convection. Mixing length theory is analogous to the concept of mean free path in thermodynamics where a fluid parcel will conserve its characteristics for a certain “mixing length” before being incorporated with the surrounding fluid. This means that within convection zones, the stellar model is fully mixed (no change in element abundances) but no mixing occurs outside of the convective zone boundaries. 
-
-                This is a rough approximation and focusing on the convective boundaries, there should be parcels of fluid overshooting the convective boundaries due to their own momentum. This would mean an effective change in the position of the convective boundaries and how much overshooting there is across boundaries is an important unknown input parameter in stellar modeling. Overshoot in MESA is treated as overmixing and the code includes two options, step overshoot and exponential overshoot. 
-                
-                These two overshoot modeling methods change the mixing efficiency versus interior mass profile of a stellar model in two slightly different ways as shown in the above schematic. Step overshoot extends the convectiv, high mixing zone past the convective boundary by a distance of a free parameter f<sub>overshoot</sub> times the pressure scale height at the boundary position. Exponential overshoot extends the high mixing convective zone in a slightly more complicated way where the mixing efficiency falls off exponentially from the convective mixing value once you move a characteristic distance parameterized also parameterized by f<sub>overshoot</sub> away from the convective boundary.
-
-                To investigate the effect of different overshoot values, we made stellar models using the evolution code <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract" target="_blank"> MESA</a> which solves the fully coupled structure and composition equations simultaneously. 
-                
-                NOTE: Core overshoot is also important in the main sequence evolution of a star but since the cores of red giants aren’t convective, core overshoot manifests as a fossil signature from the main sequence. In future work though, we will look into the signatures of core overshoot. 
             </p>
+            <p style="margin-bottom:1cm;">This is a rough approximation and focusing on the convective boundaries, there should be parcels of fluid overshooting the convective boundaries due to their own momentum. This would mean an effective change in the position of the convective boundaries and how much overshooting there is across boundaries is an important unknown input parameter in stellar modeling. Overshoot in MESA is treated as overmixing and the code includes two options, step overshoot and exponential overshoot. 
+            </p>
+            <p style="margin-bottom:1cm;"> These two overshoot modeling methods change the mixing efficiency versus interior mass profile of a stellar model in two slightly different ways as shown in the above schematic. Step overshoot extends the convectiv, high mixing zone past the convective boundary by a distance of a free parameter f<sub>overshoot</sub> times the pressure scale height at the boundary position. Exponential overshoot extends the high mixing convective zone in a slightly more complicated way where the mixing efficiency falls off exponentially from the convective mixing value once you move a characteristic distance parameterized also parameterized by f<sub>overshoot</sub> away from the convective boundary.
+            </p>
+            <p style="margin-bottom:3cm;">To investigate the effect of different overshoot values, we made stellar models using the evolution code <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract" target="_blank"> MESA</a> which solves the fully coupled structure and composition equations simultaneously. 
+                
+            NOTE: Core overshoot is also important in the main sequence evolution of a star but since the cores of red giants aren’t convective, core overshoot manifests as a fossil signature from the main sequence. In future work though, we will look into the signatures of core overshoot. 
+            </p>
+
 
         </div>           
     </div>
@@ -112,7 +113,7 @@
         </div>
 
         <div class="features">
-            <p style="margin-bottom:3cm;">
+            <p style="margin-bottom:1cm;">
                 The asteroseismic pulsations visible on the photospheres of stars by missions like Kepler are produced by standing waves traveling inside the star. Waves where the restoring force is pressure are called p modes and can only exist with frequencies above two characteristic frequencies called the lamb frequency and the brunt vaisala frequency. 
                 On the other hand, waves where the restoring force is buoyancy are called gravity modes or g modes and exist with frequencies below the lamb and brunt vaisala frequencies. In regions of a star where the brunt vaisala frequency is imaginary, the stellar fluid is unstable to convection and we have a convection zone. The effective position of the convection zone is changed with the implementation of envelope overshoot. 
             </p>
@@ -141,7 +142,7 @@
 
         <div class="features">
             <p style="margin-bottom:3cm;">
-                Implementing step envelope overshoot changes the elemental abundance profile of the stellar model. The upper left gif shows the Hydrogen abundance (solid lines) and Helium abundance (dashed lines) evolution for red giant models of different overshoot values as they move up the red giant branch. Similarly, at given values of surface gravity (log(g)), red giant models with different overshoot values have slightly different Brunt–Väisälä frequency profiles since the profile bumps representing the position of the convection zone base are at different locations (see upper right gif.) 
+                Implementing step envelope overshoot changes the elemental abundance profile of the stellar model. The upper left gif shows the Hydrogen abundance (solid lines) and Helium abundance (dashed lines) evolution for red giant models of different overshoot values as they move up the red giant branch. Similarly, at given values of surface gravity (log(g)), red giant models with different overshoot values have slightly different Brunt–Väisälä frequency profiles since the profile bump signature of the first dredge up at different locations (see upper right gif.) 
 
             </p>
     </div>
@@ -156,8 +157,8 @@
     <article>
         <h3>Oscillation Mode Properties</h3>
         <div class="features">
-                <embed src="images/inertia_plot.pdf" #view=FitH width="640" height="520" style="float: left; margin: 5px 10px 5px 10px;" alt="" />
-                <embed src="images/period_plot.pdf" #view=FitH width="640" height="520" style="float: right; margin: 5px 10px 5px 10px;" alt="" />
+                <embed src="images/inertia_plot.pdf" #view=FitH width="660" height="520" style="float: left; margin: 5px 10px 5px 10px;" alt="" />
+                <embed src="images/period_plot.pdf" #view=FitH width="660" height="520" style="float: right; margin: 5px 10px 5px 10px;" alt="" />
         </div>
 
         <div class="features">
@@ -178,8 +179,8 @@
     <article>
         <h3>Period Echelle Diagrams</h3>
         <div class="features">
-                <embed src="images/Period Echelle Diagram, log(g) 3.0.pdf" #view=FitH width="640" height="550" style="float: left; margin: 5px 10px 5px 10px;" alt="" />
-                <embed src="images/Period Echelle Diagram, log(g) 2.6.pdf" #view=FitH width="640" height="550" style="float: right; margin: 5px 10px 5px 10px;" alt="" />
+                <embed src="images/Period Echelle Diagram, log(g) 3.0.pdf" #view=FitH width="660" height="550" style="float: left; margin: 5px 10px 5px 10px;" alt="" />
+                <embed src="images/Period Echelle Diagram, log(g) 2.6.pdf" #view=FitH width="660" height="550" style="float: right; margin: 5px 10px 5px 10px;" alt="" />
         </div>
 
         <div class="features">
