@@ -82,10 +82,9 @@
                 <img src="images/Overshoot_Mixing.png" width="900" style=" margin: 5px 10px 5px 10px;" alt=""/>
         <div class="features" style="text-align: left;">
             <p style="margin-bottom:1cm;">
-                Stellar evolution codes like <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract" target="_blank"> MESA</a> generally use a mixing length approximation to model convection. Mixing length theory is analogous to the concept of mean free path in thermodynamics where a fluid parcel will conserve its characteristics for a certain “mixing length” before being incorporated with the surrounding fluid. This means that within convection zones, the stellar model is fully mixed (no change in element abundances) but no mixing occurs outside of the convective zone boundaries. 
+            Stellar evolution codes like <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract" target="_blank"> MESA</a> generally use a mixing length approximation to model convection. Mixing length theory is analogous to the concept of mean free path in thermodynamics where a fluid parcel will conserve its characteristics for a certain “mixing length” before being incorporated with the surrounding fluid. This means that within convection zones, the stellar model is fully mixed (no change in element abundances) but no mixing occurs outside of the convective zone boundaries. This is a rough approximation and focusing on the convective boundaries, there should be parcels of fluid overshooting the convective boundaries due to their own momentum. This would mean an effective change in the position of the convective boundaries and how much overshooting there is across boundaries is an important unknown input parameter in stellar modeling. Overshoot in MESA is treated as overmixing and the code includes two options, step overshoot and exponential overshoot. 
             </p>
-            <p style="margin-bottom:1cm;">This is a rough approximation and focusing on the convective boundaries, there should be parcels of fluid overshooting the convective boundaries due to their own momentum. This would mean an effective change in the position of the convective boundaries and how much overshooting there is across boundaries is an important unknown input parameter in stellar modeling. Overshoot in MESA is treated as overmixing and the code includes two options, step overshoot and exponential overshoot. 
-            </p>
+           
             <p style="margin-bottom:1cm;"> These two overshoot modeling methods change the mixing efficiency versus interior mass profile of a stellar model in two slightly different ways as shown in the above schematic. Step overshoot extends the convectiv, high mixing zone past the convective boundary by a distance of a free parameter f<sub>overshoot</sub> times the pressure scale height at the boundary position. Exponential overshoot extends the high mixing convective zone in a slightly more complicated way where the mixing efficiency falls off exponentially from the convective mixing value once you move a characteristic distance parameterized also parameterized by f<sub>overshoot</sub> away from the convective boundary.
             </p>
             <p style="margin-bottom:3cm;">To investigate the effect of different overshoot values, we made stellar models using the evolution code <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract" target="_blank"> MESA</a> which solves the fully coupled structure and composition equations simultaneously. 
@@ -142,7 +141,7 @@
 
         <div class="features">
             <p style="margin-bottom:3cm;">
-                Implementing step envelope overshoot changes the elemental abundance profile of the stellar model. The upper left gif shows the Hydrogen abundance (solid lines) and Helium abundance (dashed lines) evolution for red giant models of different overshoot values as they move up the red giant branch. Similarly, at given values of surface gravity (log(g)), red giant models with different overshoot values have slightly different Brunt–Väisälä frequency profiles since the profile bump signature of the first dredge up at different locations (see upper right gif.) 
+                Implementing step envelope overshoot changes the elemental abundance profile of the stellar model. The upper left animation shows the Hydrogen abundance (solid lines) and Helium abundance (dashed lines) evolution for red giant models of different overshoot values as they move up the red giant branch. Similarly, at given values of surface gravity, log(g), red giant models with different overshoot values have slightly different Brunt–Väisälä frequency profiles since the profile bump signature of the first dredge up at different locations (see upper right animation.) 
 
             </p>
     </div>
@@ -157,15 +156,14 @@
     <article>
         <h3>Oscillation Mode Properties</h3>
         <div class="features">
-                <embed src="images/inertia_plot.pdf" #view=FitH width="660" height="520" style="float: left; margin: 5px 10px 5px 10px;" alt="" />
-                <embed src="images/period_plot.pdf" #view=FitH width="660" height="520" style="float: right; margin: 5px 10px 5px 10px;" alt="" />
+                <embed src="images/period_plot_before_bump.pdf" #view=FitH width="660" height="520" style="float: left; margin: 5px 10px 5px 10px;" alt="" />
+                <embed src="images/period_plot_after_bump.pdf" #view=FitH width="660" height="520" style="float: right; margin: 5px 10px 5px 10px;" alt="" />
         </div>
 
         <div class="features">
             <p style="margin-bottom:3cm;">
-                MOTIVATION: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus turpis, tempor viverra luctus non, posuere id ipsum. Etiam tristique facilisis pulvinar. Maecenas eros nibh, tristique sed nulla eu, tincidunt aliquam leo. Maecenas nec ultricies magna. Etiam ante elit, mattis in nibh ac, malesuada tincidunt sem. Duis ultrices tortor eget odio sollicitudin, nec efficitur magna laoreet. Aliquam vitae lectus justo. Cras fringilla sapien ipsum, ut scelerisque felis posuere at. Nam et porttitor tellus. Aliquam elementum ultrices est ut interdum.
-
-                Vestibulum mauris elit, euismod eu velit sed, aliquet dapibus est. Nam sem dui, bibendum at lectus sit amet, tempor sollicitudin dui. Donec a massa cursus, ultricies quam id, semper eros. Duis a egestas lectus. Sed quis vehicula nulla. Aliquam finibus nunc eu ante egestas vestibulum. Phasellus et pharetra dui, in pulvinar arcu. Pellentesque pretium magna risus. Nam vitae est vel ante vehicula faucibus vel vitae metus. Etiam at metus et lectus ullamcorper tempor. Aliquam consectetur felis diam, sit amet iaculis elit auctor in. Aenean sit amet malesuada erat. Integer fermentum nec turpis sed accumsan. 
+                We used the stellar oscillation code <a href="https://ui.adsabs.harvard.edu/abs/2013MNRAS.435.3406T/abstract" target="_blank"> GYRE</a> to calculate the oscillation mode frequencies of each of the different overshoot models at each evolutionary log(g) value.
+                
             </p>
     </div>
     </article>
