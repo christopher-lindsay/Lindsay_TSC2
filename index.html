@@ -141,7 +141,7 @@
 
         <div class="features">
             <p style="margin-bottom:3cm;">
-                Implementing step envelope overshoot changes the elemental abundance profile of the stellar model. The upper left animation shows the Hydrogen abundance (solid lines) and Helium abundance (dashed lines) evolution for red giant models of different overshoot values as they move up the red giant branch. Similarly, at given values of surface gravity, log(g), red giant models with different overshoot values have slightly different Brunt–Väisälä frequency profiles since the profile bump signature of the first dredge up at different locations (see upper right animation.) 
+                Implementing step envelope overshoot changes the elemental abundance profile of the stellar model. The upper left animation shows the Hydrogen abundance (solid lines) and Helium abundance (dashed lines) evolution for red giant models of different overshoot values as they move up the red giant branch. Similarly, at given values of surface gravity, log(g), red giant models with different overshoot values (values of f) have slightly different Brunt–Väisälä frequency profiles since the profile bump signature of the first dredge up changes location based on different values of f (see upper right animation.) 
 
             </p>
     </div>
@@ -161,9 +161,14 @@
         </div>
 
         <div class="features">
-            <p style="margin-bottom:3cm;">
-                We used the stellar oscillation code <a href="https://ui.adsabs.harvard.edu/abs/2013MNRAS.435.3406T/abstract" target="_blank"> GYRE</a> to calculate the oscillation mode frequencies of each of the different overshoot models at each evolutionary log(g) value.
+            <p style="margin-bottom:1cm;">
+                We used the stellar oscillation code <a href="https://ui.adsabs.harvard.edu/abs/2013MNRAS.435.3406T/abstract" target="_blank"> GYRE</a> to calculate the oscillation mode frequencies (and therefore periods) of each of the different overshoot models at each evolutionary log(g) value.
                 
+                Red giant mode frequencies are generally equally spaced in period so it is informative to plot the period difference between consecutive modes as a function of frequency.
+                The upper left hand figure shows pairwise period difference versus mode frequency for log(g) = 3.0 red giant models with different values of step envelope overshoot. Similarly, the upper right hand figure shows the same for log(g) = 2.6 red giant models. 
+            </p>
+            <p style="margin-bottom:3cm;">
+                At log(g) = 3.0, none of the different overshoot red gian models have gone through the red giant branch luminosity bump and therefore the period spacing versus mode frequency plots match up between models of different overshoot. On the other hand, at log(g) = 2.6, the f = 0.6 overshoot model has gone through the red giant branch luminosity bump, resulting in a significant decrease in the median value of the period spacing. Clearly, at a given value of log(g), red giant models with different overshoot values have significantly different oscillation properties especially around the red giant branch luminosity bump. 
             </p>
     </div>
     </article>
@@ -183,9 +188,7 @@
 
         <div class="features">
             <p style="margin-bottom:3cm;">
-                MOTIVATION: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tellus turpis, tempor viverra luctus non, posuere id ipsum. Etiam tristique facilisis pulvinar. Maecenas eros nibh, tristique sed nulla eu, tincidunt aliquam leo. Maecenas nec ultricies magna. Etiam ante elit, mattis in nibh ac, malesuada tincidunt sem. Duis ultrices tortor eget odio sollicitudin, nec efficitur magna laoreet. Aliquam vitae lectus justo. Cras fringilla sapien ipsum, ut scelerisque felis posuere at. Nam et porttitor tellus. Aliquam elementum ultrices est ut interdum.
-
-                Vestibulum mauris elit, euismod eu velit sed, aliquet dapibus est. Nam sem dui, bibendum at lectus sit amet, tempor sollicitudin dui. Donec a massa cursus, ultricies quam id, semper eros. Duis a egestas lectus. Sed quis vehicula nulla. Aliquam finibus nunc eu ante egestas vestibulum. Phasellus et pharetra dui, in pulvinar arcu. Pellentesque pretium magna risus. Nam vitae est vel ante vehicula faucibus vel vitae metus. Etiam at metus et lectus ullamcorper tempor. Aliquam consectetur felis diam, sit amet iaculis elit auctor in. Aenean sit amet malesuada erat. Integer fermentum nec turpis sed accumsan. 
+                Another way to visualize the oscillation mode properties of our red giant models is with the period echelle diagram. The two figures above show period echelle diagrams (plots with mode period modulo period spacing on the x axis and frequency on the y axis) for the log(g) = 3.0 (left) and log(g) = 2.6 (right) red giant models of different step envelope overshoot values. 
             </p>
     </div>
     </article>
