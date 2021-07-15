@@ -20,7 +20,7 @@
 	}
 
     embed, img{
-        min-width: 60%;
+        max-width: 50%;
     }
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
