@@ -19,10 +19,6 @@
 		vertical-align: baseline;
 	}
 
-    embed {
-        width: 48%; 
-    }
-
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
