@@ -22,6 +22,7 @@
     embed, img{
         max-width: 48%;
         min-width: 48%;
+        max-height: 50%;
     }
     
 
