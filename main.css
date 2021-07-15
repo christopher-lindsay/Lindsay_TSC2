@@ -20,7 +20,8 @@
 	}
 
     embed {
-        width:fit-content; 
+        width: fit-content; 
+        height: fit-content;
     }
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
