@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css" />
 
-    
-    <link id="local" rel="stylesheet" type="text/css" href="katex.min.css">
-    <script src="katex.min.js"></script>
-    <script src="smrender.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
 
     <title>Red Giant Seismology</title>
@@ -17,7 +21,7 @@
 </head>
 
 
-<body class="landing" onload="myRender()">
+<body class="landing">
     
 <!-- Banner -->
 <section id="banner">
@@ -212,9 +216,8 @@
         <div class="maths">
             <p style="margin-bottom:2cm;" class="maths">
 
-            In this work, we consider that the dipole gravity modes follow the asymptotic comb-like pattern given by $ \frac{1}{/nu_g} = (-n_g + \epsilon_g)\Delta\Pi_1 $. This way, since GYRE gives the g-mode radial order $n_g$, we can find $\epsilon_g$ values for the different overshoot red giant models at different evolutionary states along the red giant branch. 
-            %[\int_0^1\frac{x^4(1-x)^4}{1+x^2}\,dx =\frac{22}{7}-\pi%]
-            $\pi$
+            In this work, we consider that the dipole gravity modes follow the asymptotic comb-like pattern given by $$ \frac{1}{/nu_g} = (-n_g + \epsilon_g)\Delta\Pi_1 $$. This way, since GYRE gives the g-mode radial order $n_g$, we can find $\epsilon_g$ values for the different overshoot red giant models at different evolutionary states along the red giant branch. 
+            
 
             </p>
     </div>
