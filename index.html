@@ -98,7 +98,13 @@
        
                 
         <div class="features" style="text-align: left;">
-            <img src="images/Overshoot_Mixing.png"  style="float: right; margin: 5px 10px 5px 10px;" alt=""/>
+            <figure>
+                <img src="images/Overshoot_Mixing.png"  style="float: right; margin: 5px 10px 5px 10px;" alt=""/>
+                <figcaption style="margin-bottom:5cm;">Figure 3, shows a mixing efficiency versus radius diagram for a convective boundry incorporating step overshoot. 
+                     
+            </figcaption>
+            </figure>
+
             <p style="margin-bottom:1cm;">
             Stellar evolution codes like <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract" target="_blank"> MESA</a> generally use a mixing length approximation to model convection. Mixing length theory is analogous to the concept of mean free path in thermodynamics where a fluid parcel will conserve its characteristics for a certain “mixing length” before being incorporated with the surrounding fluid. This means that within convection zones, the stellar model is fully mixed (no change in element abundances) but no mixing occurs outside of the convective zone boundaries. This is a rough approximation and focusing on the convective boundaries, there should be parcels of fluid overshooting the convective boundaries due to their own momentum. This would mean an effective change in the position of the convective boundaries and how much overshooting there is across boundaries is an important unknown input parameter in stellar modeling. Overshoot in MESA is treated as overmixing and the code includes two options, step overshoot and exponential overshoot. 
             </p>
