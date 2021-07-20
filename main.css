@@ -3894,10 +3894,10 @@
 
 	#banner {
 		padding: 8em 0 6em 0;
-		background-color: #00366b;
+		background-color:darkblue;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image:  url("images/banner.jpg");
 		background-size: cover;
 		text-align: center;
 	}
