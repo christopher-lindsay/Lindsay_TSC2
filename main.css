@@ -1603,7 +1603,7 @@
 
 	body, input, select, textarea {
 		font-family: "Raleway", Helvetica, sans-serif;
-		font-size: 13pt;
+		font-size: 18pt;
 		font-weight: 400;
 		line-height: 2em;
 	}
@@ -1611,7 +1611,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 16pt;
 			}
 
 		}
@@ -1619,7 +1619,7 @@
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 15pt;
 			}
 
 		}
@@ -1627,7 +1627,7 @@
 		@media screen and (max-width: 980px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -1635,7 +1635,7 @@
 		@media screen and (max-width: 736px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 13pt;
 			}
 
 		}
