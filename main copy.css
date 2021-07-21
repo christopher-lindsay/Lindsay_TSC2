@@ -23,14 +23,11 @@
         max-width: 48%;
         min-width: 48%;
         max-height: 46%;
-        min-height: 46%;
     }
 
     img{
         max-width: 48%;
-        min-width: 48%;
-        max-height: 46%;
-        min-height: 46%;
+        max-height: 40%;
     }
     
 
@@ -3896,7 +3893,7 @@
 /* Banner */
 
 	#banner {
-		padding: 7em 0 5em 0;
+		padding: 8em 0 6em 0;
 		background-color:darkblue;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed;
